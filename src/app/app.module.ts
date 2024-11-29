@@ -6,17 +6,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
+import { AutonomousComponent } from './autonomous/autonomous.component';
+import { OperadoresComponent } from './operadores/operadores.component';
+import { FormsModule } from '@angular/forms';
 
 //El decorador NgModule: Declara que esta clase es un módulo. Los módulos en Angular se utilizan para organizar el código 
 @NgModule({
   declarations: [ //Aquí es donde se declaran los componentes
     AppComponent,
-    EjemploComponent
+    EjemploComponent,
+    OperadoresComponent,
   ],
   imports: [ //Módulos que necesita nuestra aplicación para funcionar correctamente
     BrowserModule,
     AppRoutingModule,
-    HeaderModule
+    HeaderModule,
+    AutonomousComponent,
+    FormsModule
   ],
   providers: [], //Añadimos aquí los servicios
   bootstrap: [AppComponent] //Componente raiz. Punto de entrada de mi aplicación 

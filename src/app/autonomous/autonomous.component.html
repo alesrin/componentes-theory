@@ -1,0 +1,35 @@
+<!-- 
+OTRO EJEMPLO INTERPOLACIÓN 
+<h3>Los meses del año incluídos por estaciones</h3>
+<h2>Estación Primavera</h2>
+<p> {{ mesesAnio[1] }} </p>
+<h2>Estación Verano</h2>
+<p> {{ mesesAnio[2] }} </p>
+<h2>Estación Otoño</h2>
+<p> {{ mesesAnio[3] }} </p>
+<h2>Estación Invierno</h2>
+<p> {{ mesesAnio[0] }} </p> -->
+
+<input [(ngModel)]="nombre"  type="text" placeholder="Escribe tu nombre">
+<p>Hola {{nombre}}</p>
+
+
+
+<input [(ngModel)]="mensajeInicial"  type="text">
+<p>{{mensajeInicial}}</p>
+
+
+    <div>
+    <label for="">Escribe tu nombre</label>
+    <input type="text" [(ngModel)]="nombreUsuario" ></div>
+    <div>
+    <input placeholder="Escribe tu año de nacimiento con números" type="text" [(ngModel)]="anioNacimiento" ></div>
+    <div>
+    <label for="">Corrige el año actual en caso de que sea necesario</label>
+    <input type="text" [(ngModel)]="anioActual">
+    </div>
+
+
+<p>Bienvenido usuario {{nombreUsuario}}</p>
+<p>Tu año de nacimiento es: {{anioNacimiento}}</p>
+<p>Tu edad es: {{anioActual - anioNacimiento}}</p>
